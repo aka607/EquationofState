@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "equation_of_state"
+version = "0.0.1"
+dependencies = [
+    "ase >= 3.28.0", 
+    "matplotlib >= 3.10.8",
+    "mpi4py >= 4.0.3",     
+    "matplotlib >= 3.10.1", 
+    "numpy >= 1.26.4",     
+    ]
+requires-python = ">=3.10.14"
+authors = [
+  {name = "Agnes Katai", email = "agneskatai6@gmail.com"},
+]
+readme = "README.md"
+
+[tool.setuptools]
+packages = ["equation_of_state"]

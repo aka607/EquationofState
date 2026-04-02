@@ -1,4 +1,4 @@
-from eos_setup import *
+from equation_of_state.eos_setup import * 
 
 path = '/home/abkatai/scratch/eos'
 

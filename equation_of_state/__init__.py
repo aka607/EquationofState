@@ -1,1 +1,1 @@
-import eos_setup 
+from equation_of_state.eos_setup import *

@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: equation_of_state
+Version: 0.0.1
+Author-email: Agnes Katai <agneskatai6@gmail.com>
+Requires-Python: >=3.10.14
+Description-Content-Type: text/markdown
+Requires-Dist: ase>=3.28.0
+Requires-Dist: matplotlib>=3.10.8
+Requires-Dist: mpi4py>=4.0.3
+Requires-Dist: matplotlib>=3.10.1
+Requires-Dist: numpy>=1.26.4
