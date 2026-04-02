@@ -9,13 +9,13 @@ To use this package, follow these instructions:
 
 cd lammps/src && make mode=shared mpi
 
-
 2. After compiling LAMMPs in shared mode:
 
 make install-python
 
 
 Instead of the above 2 steps, you can alternatively do:
+
 cd lammps/src && make yes-python && make mode=shared mpi
 
 
@@ -27,5 +27,5 @@ cd lammps/src && make yes-python && make mode=shared mpi
 
 To run a VASP calculation from ASE, you need to set the following environment variables in your .bashrc file:
 
-    export VASP_PP_PATH=<path to pseudopotential folder (POTCAR)> 
-    export VASP_SCRIPT=<path to run_vasp.py>
+    export VASP_PP_PATH=<path-to-pseudopotentials>
+    export VASP_SCRIPT=<path-to-run_vasp.py>
