@@ -5,23 +5,28 @@ Making LAMMPs usable within Python requires putting the LAMMPS Python package (l
 To use this package, follow these instructions: 
 
 Install the LAMMPs shared library. This is a dynamic version of the LAMMPs executable that can be loaded into Python: 
+
     cd lammps/src 
     make mode=shared mpi
 
 After compiling LAMMPs in shared mode:
+
     make install-python
 
 Instead of the above 2 steps, you can alternatively do:
+
     cd lammps/src 
     make yes-python 
     make mode=shared mpi
 
 
 Set the path to your python interpreter that has the LAMMPs Python package installed to it and the LAMMPs shared library path: 
+
     export PYTHONPATH=/home/abkatai/.local/lib/python3.11/site-packages:$PYTHONPATH
     export LD_LIBRARY_PATH=/home/abkatai/.local/lib/python3.11/site-packages/lammps:$LD_LIBRARY_PATH
 
 
 To run a VASP calculation from ASE, you need to set the following environment variables in your .bashrc file:
+
     export VASP_PP_PATH=<path-to-pseudopotentials>
     export VASP_SCRIPT=<path-to-run_vasp.py>
