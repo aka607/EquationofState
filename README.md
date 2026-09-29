@@ -22,8 +22,8 @@ Instead of the above 2 steps, you can alternatively do:
 
 Set the path to your python interpreter that has the LAMMPs Python package installed to it and set the path to the LAMMPs shared library: 
 
-    export PYTHONPATH=/home/abkatai/.local/lib/python3.11/site-packages:$PYTHONPATH
-    export LD_LIBRARY_PATH=/home/abkatai/.local/lib/python3.11/site-packages/lammps:$LD_LIBRARY_PATH
+    export PYTHONPATH=~/.local/lib/python3.11/site-packages:$PYTHONPATH
+    export LD_LIBRARY_PATH=~/.local/lib/python3.11/site-packages/lammps:$LD_LIBRARY_PATH
 
 
 Furthermore, if you wish to perform an Equation of State calculation by running VASP calculations within ASE, you need to set the following environment variables in your .bashrc file:
